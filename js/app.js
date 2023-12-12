@@ -1,18 +1,16 @@
-const toggle = document.querySelector(".toggle");
-const menu = document.querySelector(".menu");
-/* Toggle mobile menu */
-function toggleMenu() {
-  if (menu.classList.contains("active")) {
-    menu.classList.remove("active");
+function addCollection() {
+  var xhr = new XMLHttpRequest();
+  var url = "http://localhost:8081/api/v1/collection/add";
+  xhr.open("POST", url, true);
+  xhr.setRequestHeader("Content-Type", "application/json");
 
-    // adds the menu (hamburger) icon
-    toggle.querySelector("a").innerHTML = "<i class=\"fas fa-bars\"></i>";
-  } else {
-    menu.classList.add("active");
-
-    // adds the close (x) icon
-    toggle.querySelector("a").innerHTML = "<i class=\"fas fa-times\"></i>";
-  }
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      window.location.href = 'dashboard.html';
+      console.log("Response received: ", xhr.responseText);
+    }
+  };
+  var walletId = document.getElementById("wallet-id").value;
+  var data = JSON.stringify({"slug": walletId});
+  xhr.send(data);
 }
-/* Event Listener */
-toggle.addEventListener("click", toggleMenu, false);

@@ -17,7 +17,7 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 
 
   <link rel="manifest" href="site.webmanifest">
@@ -35,14 +35,35 @@
       <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
     </ul>
   </nav>
-  <div class="content">
+  <div class="content-dashboard">
+    <div class="table-shadow">
+      <h1 class="dashboard-title">Administrator - Manage Wallets</h1>
+      <input type="text" id="search" class="input" placeholder="Search Wallet...">
+      <div class="table-div">
+        <table id="table" class="table table-hover table-mc-light-blue">
+          <tbody>
+          <!--          <tr>-->
+          <!--            <td data-title="Name">https://linkwallet.io/hidin</td>-->
+          <!--            <td data-title="Copy">-->
+          <!--              <i class="fa-solid fa-copy"></i>-->
+          <!--            </td>-->
+          <!--            <td data-title="Edit">-->
+          <!--              <i class="fas fa-pen-to-square"></i>-->
+          <!--            </td>-->
+          <!--            <td data-title="Copy">-->
+          <!--              <i class="fa-solid fa-trash"></i>-->
+          <!--            </td>-->
+          <!--          </tr>-->
 
+          </tbody>
+        </table>
+      </div>
+      <h6>Page 1 of 1</h6>
+    </div>
   </div>
-
-
 </header>
-
-<script src="js/app.js"></script>
+<script src="js/header.js"></script>
+<script src="js/dashboard.js"></script>
 </body>
 
 </html>

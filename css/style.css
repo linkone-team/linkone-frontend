@@ -94,13 +94,27 @@ a {
   position: relative;
 }
 
+.input {
+  padding: 10px 0px 10px 10px;
+  border: none;
+  font-size: 18px;
+  color: #6A6F74;
+  background-color: #F4F4F4;
+}
+
+
+.input:focus {
+  outline: none;
+  border: none;
+  /* Or, for a background color change: */
+  background-color: #e8e8e8; /* Use a light color to indicate focus */
+}
 
 .wallet-label {
   position: absolute;
   left: 20px; /* Adjust to match the padding of your input field */
   color: #000;
-  font-family: Roboto;
-  font-size: 32px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -108,11 +122,9 @@ a {
 }
 
 #wallet-id {
-  border: none;
-  padding: 10px 0px 10px 220px;
-  width: 400px;
-  font-size: 32px;
-  color: #6A6F74;
+  padding: 10px 0px 10px 132px;
+  width: 250px;
+  background-color: #FFF;
 }
 
 #join-button {
@@ -120,8 +132,6 @@ a {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  font-family: Roboto;
-  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -134,10 +144,49 @@ a {
   background-color: #e8e8e8; /* Use a light color to indicate focus */
 }
 
+
 .join-text {
-  font-size: 26px;
+  font-size: 18px;
 }
 
+.content-dashboard {
+  background-color: #FFF;
+  margin: 10px 10px 0px 10px;
+  text-align: center;
+}
+
+.table-shadow {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.12),
+  0 1px 2px 0 rgba(0,0,0,.24);
+  -moz-box-shadow:    0 1px 3px 0 rgba(0,0,0,.12),
+  0 1px 2px 0 rgba(0,0,0,.24);
+  box-shadow:         0 1px 3px 0 rgba(0,0,0,.12),
+  0 1px 2px 0 rgba(0,0,0,.24);
+}
+
+#search {
+  margin: 10px;
+}
+
+
+.dashboard-title {
+  padding: 10px;
+}
+
+.table {
+  padding:20px 20px 20px 20px;
+}
+
+.table tr td{
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  padding: 5px;
+  margin: 5px;
+  text-align: left;
+}
+.table-div {
+  display: flex;
+  justify-content: center;
+}
 
 /* Desktop menu */
 @media all and (min-width: 960px) {
@@ -163,14 +212,30 @@ a {
   }
 
   .content {
-    padding: 50px 0px 0px 60px;
+    padding: 30px 0px 0px 60px;
+  }
+
+  #wallet-id {
+    padding: 10px 0px 10px 220px;
+    width: 400px;
+    font-size: 32px;
+  }
+
+  .wallet-label {
+    font-size: 32px;
+  }
+  .join-text {
+    font-size: 32px;
+  }
+
+  .content-dashboard {
+    margin: 30px 500px 0px 500px;
+  }
+
+  .table {
+    align-self: center;
   }
 }
-
-
-
-
-
 
 
 
