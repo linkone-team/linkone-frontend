@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  background: #F4F4F4;
+}
+
+.navbar {
+  background-color: #FFF;
+  padding: 0;
+  margin: 0;
+  height: 90px;
+  overflow: hidden;
+}
+
+
+.navbarlogo {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left:120px;
+}
+
+.navbar ul {
+  padding: 10px 0px 10px 27px;
+  margin: 0px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.navbar li {
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline;
+}
+
+.navbar li a {
+  color: #99A1AA;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 70px;
+  font-weight: 500;
+  padding: 5px 15px;
+  opacity: 0.7;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login-container {
+  float: right;
+  padding: 10px 27px 10px 0;
+}
+
+.admin {
+  color: #99A;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 70px;
+  font-weight: 500;
+  padding: 5px 15px;
+  opacity: 0.7;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.admin:hover {
+  opacity: 1; /* or any other hover effect you'd like */
+}
+
+.user-icon {
+  border-radius: 50%; /* This makes the image round */
+  width: 60px; /* Set the desired width */
+  height: 60px; /* Set the desired height */
+  margin-left: 10px; /* Space between the "Login" text and the icon */
+  vertical-align: middle; /* Aligns the image with the text */
+}
+
+.sub-text {
+  color: #6A6F74;
+  font-family: Roboto;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.info-text {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 121px;
+}
+
+.catch-line {
+  margin-bottom: 0px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.link-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #F5F5F5; /* Change to match your specific grey */
+  padding: 0px;
+  border-radius: 5px; /* Adjust if you need rounded corners */
+  position: relative;
+}
+
+.wallet-label {
+  position: absolute;
+  left: 20px; /* Adjust to match the padding of your input field */
+  color: #000;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  pointer-events: none;
+}
+
+#username {
+  border: none; /* Light grey border */
+  padding: 10px;
+  padding-left: 220px;
+  font-size: 32px;
+  width: 180px;
+  height: 30px;
+  color: #6A6F74;
+}
+
+
+
+#join-button {
+  background-color: #FFEF00; /* Yellow background */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  height: 50px;
+}
+
+#username:focus {
+  outline: none;
+  border: none;
+  /* Or, for a background color change: */
+  background-color: #e8e8e8; /* Use a light color to indicate focus */
+}
+
+
+
